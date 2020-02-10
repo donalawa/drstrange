@@ -1,0 +1,74 @@
+<div class="main">
+    <div class="container">
+        <a routerLink="/" class="btn btn-primary ml-1 animated infinite bounceIn delay-2s">Back To Site</a>
+        <div class="row no-gutters">
+            <div class="col-md-4 border-right left-sec d-md-block d-none">
+                <div class="settings-tray">
+
+                    <img class="profile-image" src="./assets/images/docgif (1).gif">
+                    <!-- <button class="btn btn-primary ml-4 animated infinite bounceIn delay-2s">Back To Site</button> -->
+                    <span class="settings-tray-right float-right">
+                        <i class="material-icons">cached</i>
+                        <i class="material-icons">message</i>
+                        <i class="material-icons">menu</i>
+                    </span>
+                </div>
+                <!-- Second Sec -->
+                <div class="intro">
+                    <h2 class="animated infinite swing delay-2s">Hi Am Dr.Strange</h2>
+                </div>
+                <hr>
+                <div class="doc-img-sec">
+                    <img src="./assets/images/doctor2 (2).gif" alt="" class="doc-img">
+                </div>
+
+            </div>
+            <!-- Right Sec -->
+            <div class="col-md-8">
+                <div class="settings-tray right">
+                    <div class="friend-drawer no-gutters friend-drawer-gray">
+                        <img src="./assets/images/docgif (1).gif" alt="" class="profile-image">
+                        <div class="text">
+                            <h6>Dr.Strange</h6>
+                            <p>Hey am dr.strange your number one health assistant</p>
+                        </div>
+                        <span class="float-right">
+                            <i class="material-icons">cached</i>
+                            <i class="material-icons">message</i>
+                            <i class="material-icons">menu</i>
+                        </span>
+                    </div>
+                </div>
+                <!-- Chat Panel -->
+
+                <div class="chat-panel">
+                    <div class="chat-sec" id="chat-sec">
+                        <ng-container *ngFor="let message of messages | async">
+                            <div class=" row no-gutters ">
+                                <div class="col-md-3" [ngClass]="{'offset-md-9': message.sentBy === 'user'}">
+                                    <div class="chat-bubble" [ngClass]="{'blue': message.sentBy === 'user', 'chat-bubble-right': message.sentBy === 'user', 'chat-bubble-left': message.sentBy === 'bot'}">
+                                        {{ message.content }}
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-container>
+
+                    </div>
+
+
+                    <!-- Text Field -->
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <div class="chat-box-tray ">
+                                <i class="material-icons ">sentiment_very_satisfied</i>
+                                <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text " class="send-field " placeholder="Type your message here.. ">
+                                <i class="material-icons ">mic</i>
+                                <i class="material-icons " (click)="sendMessage()">send</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

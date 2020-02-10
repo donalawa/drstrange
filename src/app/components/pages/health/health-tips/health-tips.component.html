@@ -1,0 +1,18 @@
+<div>
+    <app-nav-bar></app-nav-bar>
+    <div class="head-sec">
+        <h1>Health Tips</h1>
+    </div>
+    <div class="container1">
+        <ng-container *ngFor="let healthTip of healthTips">
+            <div class="article">
+                <h1 class="title">{{ healthTip.title }}</h1>
+                <div class="content">
+                    <p class="text">{{ healthTip.content }}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+
+    <app-footer></app-footer>
+</div>

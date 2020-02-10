@@ -1,0 +1,18 @@
+<div>
+    <app-nav-bar></app-nav-bar>
+    <div class="head-sec">
+        <h1>First Aid Tips</h1>
+    </div>
+    <div class="container1">
+        <ng-container *ngFor="let firstAid of firstAids">
+            <div class="article">
+                <h1 class="title">{{ firstAid.condition }}</h1>
+                <div class="content">
+                    <p class="text">{{ firstAid.first_aid}}</p>
+                </div>
+            </div>
+        </ng-container>
+
+    </div>
+    <app-footer></app-footer>
+</div>

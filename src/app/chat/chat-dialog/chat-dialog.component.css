@@ -1,0 +1,262 @@
+/* body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: rgba(6, 81, 131, 0.9);
+    font-family: 'Sriracha', cursive;
+} */
+
+.container {
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f5f7f9 !important;
+    padding: 0;
+    border-radius: 7;
+    font-size: 15px;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.settings-tray {
+    background-color: #eee;
+    padding: 10px 15px;
+}
+
+.settings-tray i {
+    margin-top: 10px;
+    font-size: 25px;
+    color: grey;
+    margin-left: 14px;
+    transition: .3s;
+}
+
+.settings-tray i:hover {
+    color: #74b9ff;
+    cursor: pointer;
+}
+
+.intro {
+    background-color: #3399CC;
+    padding: 10px 13px;
+    text-align: center;
+    color: white;
+    font-family: 'Sriracha', cursive;
+}
+
+.input-wrapper {
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+.input-wrapper i {
+    color: gray;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+
+input {
+    border: none;
+    border-radius: 40px;
+    width: 80%;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 300;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* Third Sec */
+
+.friend-drawer {
+    padding: 10px 15px;
+    display: flex;
+    vertical-align: baseline;
+    background-color: #fff;
+    transition: .3s ease;
+}
+
+.text {
+    margin-left: 12px;
+    width: 70%;
+}
+
+h6 {
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.text p {
+    margin: 0;
+}
+
+.time {
+    color: gray;
+}
+
+.friend-drawer:hover {
+    background-color: #74b9ff;
+    cursor: pointer;
+    color: white !important;
+}
+
+hr {
+    margin: 5px auto;
+    width: 80%;
+}
+
+.intro hr {
+    margin: 0;
+}
+
+.no-gutters {
+    padding: 0;
+}
+
+.friend-drawer-gray {
+    background-color: #eee;
+}
+
+.right .friend-drawer:hover {
+    cursor: pointer;
+    background-color: #eee;
+    color: gray !important;
+}
+
+.chat-bubble {
+    padding: 10px 15px;
+    background-color: #eee;
+    margin: 10px 30px;
+    border-radius: 9px;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+.chat-bubble::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    margin-top: -10px;
+}
+
+.chat-bubble-left::after {
+    left: 0;
+    border-right-color: #eee;
+    border-left: 0;
+    margin-left: -20px;
+}
+
+.chat-bubble-right::after {
+    right: 0;
+    border-left-color: #74b9ff;
+    border-right: 0;
+    margin-right: -20px;
+}
+
+.blue {
+    background-color: #74b9ff;
+    color: white;
+}
+
+.chat-box-tray {
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 19px;
+    /* position: relative; */
+    /* bottom: -165px; */
+}
+
+.send-field {
+    margin: 0 10px;
+    padding: 6px 2px;
+}
+
+.chat-sec {
+    height: 380px;
+}
+
+.chat-box-tray i {
+    color: gray;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.chat-box-tray i:last-child {
+    margin-left: 25px;
+}
+
+.chat-box-tray i:hover {
+    cursor: pointer;
+    color: #74b9ff !important;
+}
+
+.left-sec {
+    height: 380px;
+    background-color: #3399CC;
+}
+
+.doc-img-sec {
+    height: 100%;
+}
+
+.doc-img {
+    height: 395px;
+    width: 100%;
+}
+
+.left-sec .settings-tray {
+    background-color: teal;
+    border-radius: 0;
+}
+
+.left-sec .settings-tray i {
+    color: white !important;
+}
+
+#chat-sec {
+    overflow-y: scroll;
+}
+
+
+/* scroll bar style */
+
+#chat-sec::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#chat-sec::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#chat-sec::-webkit-scrollbar-thumb {
+    background-color: lightseagreen;
+}
+
+h6 {
+    font-size: 13px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+}

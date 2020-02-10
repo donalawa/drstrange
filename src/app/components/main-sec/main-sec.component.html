@@ -1,0 +1,127 @@
+<!-- <header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="#">
+                  Dr.Strange
+              </a>
+            </div>
+            <div class="menu-icons open" (click)="toggle = !toggle">
+                <i class="icon ion-md-menu"></i>
+            </div>
+            <ul class="nav-list" [class.active]="toggle">
+                <div class="menu-icons close" (click)="toggle = !toggle">
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <li class="nav-item">
+                    <a routerLink="/" class="nav-link current">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="healthtips" class="nav-link">Health Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="symptomtips" class="nav-link">Symptoms Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="firstaidtips" class="nav-link">First Aid Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="about" class="nav-link">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+<app-nav-bar></app-nav-bar>
+<!-- Hero section -->
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="main-message">
+                <h3>Best Medical Checkup</h3>
+                <h1>Health-Care</h1>
+                <p>Get quality health care without going to the hospital always. Our plartform will provide you with tips on how to take care of your health and also with an artificial intelligence symptom checker that can diagnose you and tell you what
+                    is wrong with you and will also provide you with a treatment plan wich include traditional treatment.</p>
+                <div class="cta">
+                    <a routerLink="/drstrange" class="btn animated infinite swing delay-4s">Start Checkup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section class="experience-outdoors">
+        <div class="container">
+            <div class="title-heading">
+                <h3>Health Care</h3>
+                <h1>Doctor Strange here for you</h1>
+                <p>Bello are some of the great things that our plartform does</p>
+            </div>
+            <!-- Grid -->
+            <div class="activities-grid">
+                <!-- This will be grid item number one -->
+                <div class="activities-grid-item star-gazing">
+                    <!-- <i class="icon ion-md-star"></i> -->
+                    <h1>Personalising</h1>
+                    <p>The information we give you based on your individual factors and symptoms.</p>
+                </div>
+                <!-- This will be grid item number two -->
+                <div class="activities-grid-item hiking">
+                    <!-- <i class="icon ion-md-compass"></i> -->
+                    <h1>Guiding</h1>
+                    <p>You on your self-care journey with personalised next-steps and information.</p>
+                </div>
+                <!-- This will be grid item number three -->
+                <div class="activities-grid-item camping">
+                    <!-- <i class="icon ion-md-bonfire"></i> -->
+                    <h1>Motivating</h1>
+                    <p>You to improve your health by monitoring your progress with personalised health plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <h1 class="testimonial-title">Health Quote</h1>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>He who has health has hope, and he who has hope has everything </p>
+                    <i class="icon ion-md-quote"></i>
+                </div>
+                <!-- <div class="testimonial-customer">
+                  <img src="images/testimonial1.jpeg" alt="">
+                  <h1>Stephanie</h1>
+              </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Info section -->
+    <section class="begin-adventure">
+        <div class="container">
+            <div class="title-heading">
+                <h1>Stay Alive</h1>
+                <p>Our vision is simple: to help a billion people find their health through self-care.</p>
+            </div>
+            <div class="adventure-grid">
+                <!-- INFO GRID 1 -->
+                <div class="adventure-grid-item">
+                    <p>Your body and mind are your most valuable assets. To get through each day both need to be kept in good shape. Remember to give yourself a tune up every day by doing some of the activities mentioned above. Schedule time for yourself
+                        and your mind and body will thank you.</p>
+                </div>
+                <!-- INFO GRID 2 -->
+                <div class="adventure-grid-item">
+                    <p>It’s easy to get caught up in the continuous cycle of work, sleep, and more work. After awhile, your body screams in protest and demands you pay attention to its needs. Your body and mind deserve some rest. In just a few minutes a
+                        day you can find small ways to take care of yourself that don’t cut into your busy schedule by using our plartform</p>
+                </div>
+            </div>
+            <a class="btn btn animated infinite tada delay-4s" routerLink="/healthtips">Get health tips</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Sections -->
+<footer>
+    <p>&copy; 2020 Doctor Strange All right reserve</p>
+</footer>

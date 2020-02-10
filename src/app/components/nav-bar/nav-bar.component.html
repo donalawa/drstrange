@@ -1,0 +1,35 @@
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="#">
+                  Dr.Strange
+                  <!-- <img  class="logo" src="images/logo1.png" alt=""> -->
+              </a>
+            </div>
+            <div class="menu-icons open" (click)="toggle = !toggle">
+                <i class="icon ion-md-menu"></i>
+            </div>
+            <ul class="nav-list" [class.active]="toggle">
+                <div class="menu-icons close" (click)="toggle = !toggle">
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <li class="nav-item">
+                    <a routerLink="/home" class="nav-link" routerLinkActive="current">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/healthtips" class="nav-link" routerLinkActive="current">Health Tips</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a routerLink="/symptomtips" class="nav-link" routerLinkActive="current">Symptoms Tips</a>
+                </li> -->
+                <li class="nav-item">
+                    <a routerLink="/firstaid" class="nav-link" routerLinkActive="current">First Aid Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/about" class="nav-link" routerLinkActive="current">About</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

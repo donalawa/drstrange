@@ -1,0 +1,452 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+body {
+    /* background-color: cornflowerblue; */
+}
+
+
+/* header style */
+
+header {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+/* Nav bar style */
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border: 1px solid rgba(255, 255, 255, .2)
+}
+
+.nav-brand {
+    width: 5rem;
+}
+
+.nav-brand a {
+    color: white;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-left: 8px;
+}
+
+.menu-icons i {
+    font-size: 3.5rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.close i {
+    color: rgba(0, 107, 176, 1);
+}
+
+
+/* nav list section style */
+
+.nav-list {
+    width: 35rem;
+    height: 100vh;
+    background-color: rgb(141, 186, 216);
+    position: fixed;
+    top: 0;
+    /* hide navbar by default */
+    right: -36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+
+/* show navbar when active class is available */
+
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+
+/* Links style */
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .7)
+}
+
+
+/* Hero section style */
+
+.hero {
+    width: 100%;
+    height: 80ch;
+    background: linear-gradient(135deg, rgba(0, 107, 176, 1) 0%, rgba(2, 19, 39, 0.8) 100%), url("../../../assets/images/healthbanner.jpg") center no-repeat;
+    /* background: linear-gradient(135deg, rgba(76, 161, 175, 0.9) 0%, rgba(196, 224, 229, 0.8) 100%), url("images/header-bg.jpg") center no-repeat; */
+    /* background-size: cover; */
+    background-size: contain;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4.7rem;
+    background: url("../../../assets/images/wave-small.png") center no-repeat;
+    background-size: cover;
+}
+
+
+/* Main message style */
+
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: #fafafa;
+    text-transform: uppercase;
+    transform: translateY(20%);
+    margin: -4rem 0;
+}
+
+.main-message h3 {
+    font-size: 1.6rem;
+}
+
+.main-message h1 {
+    font-family: 'Aldrich' sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.main-message p {
+    text-transform: lowercase;
+}
+
+
+/* button style */
+
+.btn {
+    background-color: #006bb0;
+    border-radius: 2rem;
+    color: #fafafa;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: #006bb0;
+}
+
+
+/* Experience the outdoors section style */
+
+.experience-outdoors {
+    padding: 0;
+}
+
+.title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+    color: rgba(0, 0, 0, .7)
+}
+
+.title-heading h3 {
+    font-size: 1.4rem;
+}
+
+.title-heading h1 {
+    font-family: 'Aldrich' sans-serif;
+    font-size: 2rem;
+    margin: .5rem 0 1rem;
+}
+
+
+/* Activities grid style */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+}
+
+
+/* Cards style */
+
+.activities-grid-item {
+    height: 30rem;
+    padding: 5rem;
+    color: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.activities-grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(135deg, rgba(49, 24, 131, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%); */
+    /* background-image: linear-gradient(135deg, rgba(128, 24, 131, 0.9) 0%, rgba(56, 135, 149, 0.8) 100%); */
+    background-image: linear-gradient(135deg, rgba(0, 107, 176, 1) 0%, rgba(196, 224, 229, 0.8) 100%);
+    z-index: -1;
+}
+
+.star-gazing {
+    background: url("../../../assets/images/stars.jpg") center no-repeat;
+}
+
+.hiking {
+    background: url("../../../assets/images/grid1.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.camping {
+    background: url("../../../assets/images/grid2.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.activities-grid-item i {
+    font-size: 4rem;
+    color: #006bb0;
+}
+
+.activities-grid-item h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    width: 100%;
+    height: 30vh;
+    background: rgba(6, 81, 131, 0.9);
+    background-size: cover;
+    position: relative;
+}
+
+.testimonial-title {
+    padding-top: 5rem;
+    font-family: 'Aldrich' sans-serif;
+    font-size: 3rem;
+    margin: .5rem 0 1rem;
+    color: rgba(0, 0, 0, .7);
+    text-align: center;
+}
+
+.testimonial {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.testimonial-text-box {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.testimonial-text-box i {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: #fafafa;
+    opacity: .5;
+    z-index: -1;
+}
+
+.testimonial-customer img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid #fafafa;
+}
+
+
+/* INFO SECTION */
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.adventure-grid-item p {
+    color: rgba(0, 0, 0, .7);
+}
+
+footer {
+    padding: 2.5rem;
+    background-color: rgb(5, 65, 105);
+    text-align: center;
+    color: #fafafa;
+}
+
+@media (min-width: 350px) {
+    .main-message {
+        transform: translateY(40%);
+    }
+}
+
+@media(min-width: 430px) {
+    .hero::before {
+        /* height: 9.4rem; */
+        height: 5.4rem;
+        background: url("../../../assets/images/wave-medium.png");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 670px) {
+    .hero::before {
+        /* height: 9.4rem; */
+        height: 7.4rem;
+        background: url("../../../assets/images/wave-medium.png");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 8rem;
+    }
+    .nav-brand {
+        width: 3.5rem;
+    }
+    .nav-list {
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+    .menu-icons {
+        display: none;
+    }
+    .nav-item {
+        margin: 0 2.5rem;
+    }
+    .nav-link,
+    .current {
+        color: #fafafa;
+        position: relative;
+        font-size: 1.3rem;
+    }
+    .nav-link::before,
+    .current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.5rem;
+        background-color: #006bb0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 650ms;
+    }
+    .current::before {
+        transform: scaleX(1)
+    }
+    .nav-link:hover::before {
+        transform: scaleX(1);
+    }
+    .hero {
+        height: 90vh;
+    }
+    .main-message {
+        transform: translateY(70%);
+        margin: -8rem 0;
+    }
+    .title-heading h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 950px) {
+    .hero::before {
+        height: 12.7rem;
+        background: url("../../../assets/images/wave-large.png");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        height: 90vh;
+    }
+}
